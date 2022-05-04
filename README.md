@@ -1,10 +1,23 @@
 # 05 Third-Party APIs: Work Day Scheduler
 
-## Your Task
+## Application Description
 
-Create a simple calendar application that allows a user to save events for each hour of the day by modifying starter code. This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery.
+This is a simple calendar application that allows a user to save events for each hour of the day. This app runs in the browser and features are dynamically updated in HTML and CSS powered by jQuery. This application also uses  [Moment.js](https://momentjs.com/) library to work with date and time.
 
-You'll need to use the [Moment.js](https://momentjs.com/) library to work with date and time. Be sure to read the documentation carefully and concentrate on using Moment.js in the browser.
+The user may click on any row in the 9AM-5PM planner, where a highlighted text box will appear. Then the user can enter in hourly events and click the upload button on the right hand side of the row to locally save the event description. Upon reloading, all saved event descriptions will be automatically reloaded.
+
+Each time slot is also color coded as follows:
+* grey: time has already passed
+* red: current time slot associated to the time of the last page update
+* green: upcoming time slot
+
+## Deployed Application
+
+Click [here](https://nflanner.github.io/Work-Day-Scheduler/) to visit the deployed application.
+
+The following animation demonstrates the application functionality:
+
+![A user clicks on slots on the color-coded calendar and edits the events.](./Assests/images/05-third-party-apis-homework-demo.gif)
 
 ## User Story
 
@@ -31,11 +44,6 @@ THEN the text for that event is saved in local storage
 WHEN I refresh the page
 THEN the saved events persist
 ```
-
-The following animation demonstrates the application functionality:
-
-![A user clicks on slots on the color-coded calendar and edits the events.](./Assests/images/05-third-party-apis-homework-demo.gif)
-
 
 ## Grading Requirements
 
