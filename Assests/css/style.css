@@ -23,6 +23,16 @@ textarea {
 
 .description {
   white-space: pre-wrap;
+  background-color:rgba(0,0,0,0) !important;
+  border:none !important;
+}
+
+.custom-text {
+  background-color:rgba(0,0,0,0) !important;
+  border:none !important;
+  margin-top: -2.5%;
+  height: 100%;
+  width: 100%;
 }
 
 .time-block {
