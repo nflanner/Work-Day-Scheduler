@@ -32,7 +32,6 @@ function getColors() {
     for (var i = 0; i < allRows.length; i++) {
         var rowHour = i + 9
         if (rowHour < currentHour) {
-            // allRows[i].querySelector('.col-10').className = 'col-10 past';
             allRows[i].className = 'row past';
         } else if (rowHour ==  currentHour) {
             allRows[i].className = 'row present';
@@ -51,13 +50,10 @@ function saveEventContent() {
 function loadEventContent() {
     var prevContent = JSON.parse(localStorage.getItem("eventContent"));
     var contentList = contentEls;
-    for (var i = 0; i < Object.keys(eventsLocal).length; i++) {
-        if (prevContent[i] != ""){
+    if (prevContent) {
+        for (var i = 0; i < Object.keys(eventsLocal).length; i++) {
             contentList[i].value = prevContent[i];
             eventsLocal[i] = prevContent[i];
-        } else {
-            contentList[i].value = "";
-            eventsLocal[i] = "";
         }
     }
 }
